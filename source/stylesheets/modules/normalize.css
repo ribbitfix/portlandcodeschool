@@ -77,7 +77,7 @@ input, textarea, button, select {
 */
 
 ::selection {
-    background: red;
+    background: #E25B29;
     color: white;
 }
 ::-moz-selection {

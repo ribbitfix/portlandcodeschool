@@ -69,7 +69,8 @@ header p, #intro p{
   font-style: italic;
 }
 header img{
-  margin-right: 16px;
+  width:100%;
+/*  margin-right: 16px;*/
 }
 footer {
   text-align: center;
@@ -93,7 +94,7 @@ a, a:visited{
   color: $link-color;
 }
 a:hover{
-  color: $highlight-color;
+  color: $title-color;
 }
 ul{
   margin-left: $gutter;
