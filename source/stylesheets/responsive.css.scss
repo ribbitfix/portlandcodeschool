@@ -118,7 +118,9 @@
     }
     .image-row {
       text-align: center;
-      margin: 0 auto;
+      a {
+        margin: 0 auto;
+      }
     }
   }
 }
@@ -297,13 +299,16 @@
   }
 
   #homepage #sponsors {
+    .image-row {
+      margin-left: 16.5em;
+    }
     padding-top: 10px;
     .third-col {
       margin: 0 auto;
       text-align: center;
     }
     #crowdcompass a {
-      top: -9px;
+      top: 9px;
     }
     #elemental a {
       top: -3px;
