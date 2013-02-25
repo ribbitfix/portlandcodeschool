@@ -99,6 +99,9 @@ a, a:visited{
 a:hover{
   color: $link-color;
 }
+a.disabled {
+  color: #ccc;
+}
 ul{
   margin-left: $gutter;
   margin-bottom: 1em;
