@@ -7,7 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-    <title><%= @title %></title>
+    <meta name="description" content="<%= @meta_description || "The Portland Code School is an intensive 12-week course focused on teaching the essential skills necessary to begin working as a junior programmer upon graduation." %>">
+    <meta name="keywords" content="<%= @meta_keywords || "portland,code,school,pdxcodeschool,ruby,rails,sinatra,students,education" %>">
+
+    <title><%= @title || "Portland Code School" %></title>
 
     <link rel="shortcut icon" href="/favicon.ico" />
     <link href='http://fonts.googleapis.com/css?family=Press+Start+2P&text=PortlandCodeSchool' rel='stylesheet' type='text/css'>
