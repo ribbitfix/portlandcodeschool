@@ -6,6 +6,20 @@
     text-align: center;
   }
 }
+#community .partner {
+  img {
+    float: left;
+    width: 100px;
+    margin-right: 20px;
+    margin-top: 3px;
+  }
+  h3,p {
+    margin-left: 120px;
+  }
+  #code-scouts {
+    margin-top: 12px;
+  }
+}
 
 #faq .question {
   margin-bottom: 30px;
