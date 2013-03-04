@@ -1,9 +1,16 @@
 @import "modules/colors.css.scss";
 
-#homepage #sponsors {
-  .third-col {
-    margin: 0 auto;
-    text-align: center;
+#homepage {
+  #sponsors {
+    .third-col {
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+  #cta {
+    h2 {
+      margin-top: 0;
+    }
   }
 }
 #community .partner {
