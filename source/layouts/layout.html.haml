@@ -3,22 +3,26 @@
 
   %head
     %title Portland Code School
-    
+
     %meta{:charset => "utf-8"}
     %meta{ "http-equiv" => "X-UA-Compatible", :content => "IE=edge,chrome=1" }
     %meta{:name => "viewport", :content => "width=device-width, intitial-scale=1"}
     %meta{:name => "description", :content => @meta_description || "The Portland Code School is an intensive 12-week course focused on teaching the essential skills necessary to begin working as a junior programmer upon graduation."}
     %meta{:name => "keywords", :content => @meta_keywords || "portland,code,school,pdxcodeschool,ruby,rails,sinatra,students,education" }
-    
+
     %link{:rel => "shortcut icon", :href => "/favicon.ico"}
     %link{:rel => "stylesheet", :href => "/stylesheets/site.css"}
     %link{:rel => "stylesheet", :href => "/stylesheets/responsive.css"}
-    
+
   %body{:lang => "en"}
     %header
       .wrapper
         %a{:href => "/"}
-          %img{:src => "/images/pcs.jpg", :alt => "Portland Code School"}
+          / %img{:src => "/images/pcs.jpg", :alt => "Portland Code School"}
+          %img{:src => "/images/orange_rose_transparent.png", :alt => "Portland Code School"}
+          %h1
+            %div{class: "logo-text-top"} Portland
+            %div Code School
         #site_nav
           %ul
             %li
@@ -31,9 +35,9 @@
               %a{:href => "/community.html"}Community
             %li
               %a.button{:href => "/apply.html"}Apply Now
-      
+
     = yield
-    
+
     %footer#foot.clearfix
       .wrapper
         .col-3
@@ -43,7 +47,7 @@
               .mc-field-group
                 %input{:type => "email", :value => "", :name => "EMAIL", :placeholder => "Email Address", :class => "required email", :id => "mce-EMAIL"}
                 %input{:type => "submit", :name => "subscribe", :id => "mc-embedded-subscribe", :class => "button"}
-          
+
         .col-3
           %h3 Links
           %ul
@@ -53,7 +57,7 @@
               %a{:href => "faq.html"}Questions
             %li
               %a{:href => "http://www.github.com/portlandcodeschool"}Github
-              
+
         .col-3
           %h3 Contact Us
           %p
@@ -66,7 +70,6 @@
               %img{:src => "/images/icons/twitter.png"}
             %a{:href => "mailto:info@portlandcodeschool.com"}
               %img{:src => "/images/icons/mail.png"}
-    
-    
-    
-    
+
+
+
