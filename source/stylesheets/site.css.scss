@@ -3,8 +3,8 @@
 @import "modules/normalize.css";
 @import "modules/colors.css.scss";
 
-@font-face {font-family:"Weston-Free";src:url("Weston_Free.eot?") format("eot"),url("Weston_Free.woff") format("woff"),url("Weston_Free.ttf") format("truetype"),url("Weston_Free.svg#Weston-Free") format("svg");font-weight:normal;font-style:normal;}
-@font-face {font-family:"Weston-Light-Free";src:url("Weston_Light_Free.eot?") format("eot"),url("Weston_Light_Free.woff") format("woff"),url("Weston_Light_Free.ttf") format("truetype"),url("Weston_Light_Free.svg#Weston-Light-Free") format("svg");font-weight:normal;font-style:normal;}
+@font-face {font-family:"Weston-Free";src:url("/fonts/Weston_Free.eot?") format("eot"),url("/fonts/Weston_Free.woff") format("woff"),url("/fonts/Weston_Free.ttf") format("truetype"),url("/fonts/Weston_Free.svg#Weston-Free") format("svg");font-weight:normal;font-style:normal;}
+@font-face {font-family:"Weston-Light-Free";src:url("/fonts/Weston_Light_Free.eot?") format("eot"),url("/fonts/Weston_Light_Free.woff") format("woff"),url("/fonts/Weston_Light_Free.ttf") format("truetype"),url("/fonts/Weston_Light_Free.svg#Weston-Light-Free") format("svg");font-weight:normal;font-style:normal;}
 
 @mixin border-radius($radius: 2px) {
   -moz-border-radius: $radius;
