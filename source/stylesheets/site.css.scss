@@ -1,0 +1,208 @@
+//Imports
+//@import "modules/grid.css.scss";
+@import "modules/normalize.css";
+@import "modules/colors.css.scss";
+
+@mixin border-radius($radius: 2px) {
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+}
+
+body {
+  height: 100%;
+  margin: 0 auto;
+  font-family: Helvetica, 'Helvetica Neue', Arial, sans-serif;
+  background: $main-bg-color;
+  color: $text-color;
+  line-height: 1.75;
+}
+h1, h2, h3, h4, h5 {
+  margin: 0;
+}
+h2 {
+  font-size: 24px;
+  line-height: 24px;
+  color: $orange;
+}
+p {
+  margin-bottom: 10px;
+}
+
+a, a:visited {
+  color: $blue;
+  text-decoration: none;
+  &:hover {
+    color: lighten($blue, 30%);
+  }
+  &.button {
+    @include border-radius(5px);
+    padding: 8px 14px;
+    background: $orange;
+    color: white;
+    &:hover {
+      background: darken($orange, 10%);
+    }
+  }
+}
+
+.col-1, .col-2, .col-3 {
+  margin: 0 10px;
+  float:left;
+}
+.col-1 {
+  width: 940px;
+}
+.col-2 {
+  width: 460px;
+}
+
+.col-3 {
+  width: 300px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  border-bottom: 1px solid #eaeaea;
+  opacity: 1;
+  left: 0;
+  z-index: 9998;
+  width: 100%;
+  min-height: 110px;
+  background: white;
+  img {
+    margin: 15px 0;
+  }
+}
+#site_nav {
+  float: right;
+  ul {
+    list-style: none;
+    margin-top: 50px;
+    li {
+      float:left;
+      display: block;
+      padding:0 15px;
+    }
+  }
+}
+
+#content {
+  margin-top: 110px;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 960px;
+}
+
+#intro {
+  background: $tan;
+  height: 410px;
+  background: $tan url("../images/portland.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  .wrapper {
+    padding-top:70px;
+  }
+  h2 {
+    color: $orange;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  p {
+    color: white;
+    text-shadow: 0 2px 4px #000;
+    padding: 0 140px;
+  }
+}
+
+#accolades {
+  background: $orange;
+  color: white;
+  h2 {
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+  }
+  .picture {
+    width: 110px;
+    margin-right: 10px;
+    float: left;
+  }
+  .quote {
+    width: 180px;
+    float: left;
+  }
+  .meta {
+    margin-top: 10px;
+    strong {
+      font-size: 110%;
+      font-weight: 400;
+    }
+    p.company {
+      margin-top: 0;
+      font-size: 90%;
+      font-weight: 300;
+    }
+  }
+}
+
+#badge {
+  text-align: center;
+  img {
+    margin: 0 0 -20px;
+  }
+}
+
+#stakeholders {
+  h2 {
+    text-align: center;
+  }
+  .call-to-action {
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+  }
+  a.button {
+    padding: 10px 80px;
+  }
+
+}
+
+#partners {
+  margin-top: 100px;
+  text-align: center;
+  img {
+    margin: 10px 20px;
+  }
+}
+
+footer, #foot {
+  background-color: $tan;
+  margin: 30px 0 0 0;
+  padding:30px 0 0 0;
+  color: white;
+  h3 {
+    color: #fff;
+    font-weight: 400;
+  }
+  ul {
+    padding-left: 0;
+  }
+  li {
+    list-style: none;
+  }
+  p {
+    padding: 0;
+    margin: 0;
+  }
+  #social_row {
+    padding-top: 10px;
+  }
+}
+
+//@import "responsive.css.scss";
