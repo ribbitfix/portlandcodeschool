@@ -22,6 +22,7 @@ body {
 }
 h1, h2, h3, h4, h5 {
   margin: 0;
+  font-family: 'Weston-Light-Free';
 }
 h2 {
   font-size: 24px;
@@ -82,11 +83,12 @@ header {
   h1 {
     margin-left: 8px;
     display: inline-block;
-    vertical-align: 105%;
+    vertical-align: middle;
+    margin-top: -90px;
     line-height: 1;
     font-size: 27px;
-    font-weight: normal;
-    font-family: 'Weston-Light-Free';
+    //font-weight: normal;
+    //font-family: 'Weston-Light-Free';
     .logo-text-top {
       font-family: 'Weston-Free';
     }
