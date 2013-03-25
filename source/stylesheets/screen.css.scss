@@ -67,6 +67,10 @@ h2, h3, h4, h5, h6 {
 h3 {
   color: $highlight-color;
 }
+blockquote {
+  border-left: 3px solid $highlight-color;
+  padding-left: 20px;
+}
 header p, #intro p{
   text-align: justify;
   font-style: italic;

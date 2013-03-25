@@ -47,7 +47,22 @@
     margin-left: 120px;
   }
 }
-
+#bootcamps {
+  .women {
+    color: $title-color;
+    font-size: 1.5em;
+  }
+  .readable-width img {
+    float: right;
+    width: 150px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+  }
+  a[href="#top"] {
+    float: right;
+    padding-top: 12px;
+  }
+}
 #apply {
   table {
     margin-top: 20px;
