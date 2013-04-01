@@ -1,78 +1,91 @@
-<%
-  @title = "Portland Code School - Employers"
-  @body_id = "hire"
-  @meta_description = "The Portland Code School Employer Network is free to join and provides you with exclusive opportunities to meet our students in order to know them."
-%>
+/ <%
+/   @title = "Portland Code School - Employers"
+/   @body_id = "hire"
+/   @meta_description = "The Portland Code School Employer Network is free to join and provides you with exclusive opportunities to meet our students in order to know them."
+/ %>
 
-<div class="readable-width">
-  <h2>The Employer Network</h2>
-  <p>The Portland Code School Employer Network is free to join and provides you with exclusive opportunities to meet our students in order to know them. If you meet a student you want on your team, at the end of the program, you can hire them.</p>
+#page
+  .wrapper
+    .readable-width.center
+      %h2 The Employer Network
+      %p The Portland Code School Employer Network is free to join and provides you with exclusive opportunities to meet our students in order to know them. If you meet a student you want on your team, at the end of the program, you can hire them.
 
-  <h3>Be a Partner</h3>
-  <p>We listen to feedback and input from you to ensure we teach the skills you are hiring for and that the students we admit are the kinds of employees you want on your team.</p>
+      %h3 Be a Partner
+      %p We listen to feedback and input from you to ensure we teach the skills you are hiring for and that the students we admit are the kinds of employees you want on your team.
 
-  <h3>Build Relationships</h3>
-  <p>Take time to get to know our students. When it comes time to hire, you can ensure you find the best fit for your team. Students who get to know your company are more likely to be excited about working for you and be loyal, dedicated employees. </p>
+      %h3 Build Relationships
+      %p Take time to get to know our students. When it comes time to hire, you can ensure you find the best fit for your team. Students who get to know your company are more likely to be excited about working for you and be loyal, dedicated employees.
 
-  <h3>Training & On-Going Support</h3>
-  <p>We offer employer trainings on bringing junior developers up to speed after hiring and provide ongoing support for mentoring and evaluating new hires. </p>
-  <p><strong>To join the Employer Network, send us:</strong></p>
-  <ul>
-    <li>The name and email address of a liason from your company</li>
-    <li>A 100x100 image of your logo and a destination url</li>
-  </ul>
-  <p><strong>Email us at <a href="mailto:employers@portlandcodeschool.com">employers@portlandcodeschool.com</a></strong></p>
+      %h3 Training & On-Going Support
+      %p We offer employer trainings on bringing junior developers up to speed after hiring and provide ongoing support for mentoring and evaluating new hires.
+      %p
+        %strong To join the Employer Network, send us:
+      %ul 
+        %li The name and email address of a liason from your company
+        %li A 100x100 image of your logo and a destination url
+      %p 
+        %strong
+          Email us at
+          %a{:href => "mailto:employers@portlandcodeschool.com" } employers@portlandcodeschool.com
+  .tan  
+    .wrapper
+      .readable-width.center
+        %h2 Hiring a Student
+        %p If you decide to hire a student, we charge a placement fee of $7,500. 100% of this fee refunds the student's tuition.
+        %p
+          %strong Cost to join the Employer Network: Free
+        %p 
+          %strong Cost to hire a student after graduation: $7,500
 
-  <h2>Hiring a Student</h2>
-  <p>If you decide to hire a student, we charge a placement fee of $7,500. 100% of
-  this fee refunds the student's tuition.</p>
-  <p><strong>Cost to join the Employer Network: Free</strong></p>
-  <p><strong>Cost to hire a student after graduation: $7,500</strong></p>
-</div>
 
-<h2>Ways You Can Get to Know Students</h2>
+  .wrapper.engagement
+    .center
+      %h2 Ways You Can Get to Know Students
+    .clearfix
+      .col-2
+        %img{:src => "/images/en_badges/tours_and_talks.jpg"}
+        %p 
+          %strong Tours & Talks
+        %p Give students a tour of your offices and then sit down for 15-20 minutes to chat about the work your developers are doing, your office’s own unique culture and style, and what kinds of developers and skills you typically look for when hiring.
+      .col-2
+        %img{:src => "/images/en_badges/social_hour.jpg"}
+        %p 
+          %strong Social Hour
+        %p Host a lunch or happy hour with students. This could be combined with a tour and is a fun way to socialize and get to know the students. Students can also get to know your team and get excited about your company.
 
-<div class="clearfix engagement">
-  <div class="left-col">
-    <img src="/images/en_badges/tours_and_talks.jpg"></img>
-    <p><strong>Tours & Talks</strong></p><p>Give students a tour of your offices and then sit down for 15-20 minutes to chat about the work your developers are doing, your office’s own unique culture and style, and what kinds of developers and skills you typically look for when hiring.</p>
-  </div>
-  <div class="right-col">
-    <img src="/images/en_badges/social_hour.jpg"></img>
-    <p><strong>Social Hour</strong></p><p>Host a lunch or happy hour with students. This could be combined with a tour and is a fun way to socialize and get to know the students. Students can also get to know your team and get excited about your company.</p>
-  </div>
-</div>
+    .clearfix
+      .col-2
+        %img{:src => "/images/en_badges/swag.jpg"}
+        %p
+          %strong Share Some Swag
+        %p Dress the students in your company’s gear! Our students are actively engaged in networking events all over town every single week. Wouldn’t it be great if they were wearing your logo while they meet people all over town?
+      .col-2
+        %img{:src => "/images/en_badges/guest_lecture.jpg"}
+        %p 
+          %strong Guest Lecture
+        %p We welcome your expertise! Is there a topic your team values above all else that you want to make sure students know? There is room in the class schedule for a brief lecture or talk on topics that matter most to you.
 
-<div class="clearfix engagement">
-  <div class="left-col">
-    <img src="/images/en_badges/swag.jpg"></img>
-    <p><strong>Share Some Swag</strong></p><p>Dress the students in your company’s gear! Our students are actively engaged in networking events all over town every single week. Wouldn’t it be great if they were wearing your logo while they meet people all over town?</p>
-  </div>
-  <div class="right-col">
-    <img src="/images/en_badges/guest_lecture.jpg"></img>
-    <p><strong>Guest Lecture</strong></p><p>We welcome your expertise! Is there a topic your team values above all else that you want to make sure students know? There is room in the class schedule for a brief lecture or talk on topics that matter most to you.</p>
-  </div>
-</div>
+    .clearfix
+      .col-2
+        %img{:src => "/images/en_badges/en_training.jpg"}
+        %p
+          %strong Employer Network Training
+        %p Attend our webinar training free to Employer Network members all about bringing a junior developer up to speed in just two weeks.
+      .col-2
+        %img{:src => "/images/en_badges/job_fair.jpg"}
+        %p
+          %strong Job Fair
+        %p Come meet each of the students in week eight to find out if there is a new team member for your company among them.
 
-<div class="clearfix engagement">
-  <div class="left-col">
-    <img src="/images/en_badges/en_training.jpg"></img>
-    <p><strong>Employer Network Training</strong></p><p>Attend our webinar training free to Employer Network members all about bringing a junior developer up to speed in just two weeks.</p>
-  </div>
-  <div class="right-col">
-    <img src="/images/en_badges/job_fair.jpg"></img>
-    <p><strong>Job Fair</strong></p><p>Come meet each of the students in week eight to find out if there is a new team member for your company among them.</p>
-  </div>
-</div>
-
-<div class="clearfix engagement">
-  <div class="left-col">
-    <img src="/images/en_badges/host_a_hacker.jpg"></img>
-    <p><strong>Host a Hacker</strong></p><p>Get to know a student by hosting them one or two days a week in the final month of the program. See if they fit into your team dynamic by including them in team fun & social time on Fridays, let them get a feel for your office culture.</p>
-  </div>
-  <div class="right-col">
-    <img src="/images/en_badges/mentor_a_student.jpg"></img>
-    <p><strong>Mentor a Student</strong></p><p>Assign a team member to check in periodically with a student you are hosting to help with projects and to evaluate their technical ability and work style. Mentors can also help students by pairing to work on a bug or a feature in a prominent open source project.</p>
-  </div>
-</div>
+    .clearfix
+      .col-2
+        %img{:src => "/images/en_badges/host_a_hacker.jpg"}
+        %p
+          %strong Host a Hacker
+        %p Get to know a student by hosting them one or two days a week in the final month of the program. See if they fit into your team dynamic by including them in team fun & social time on Fridays, let them get a feel for your office culture.
+      .col-2
+        %img{:src => "/images/en_badges/mentor_a_student.jpg"}
+        %p
+          %strong Mentor a Student
+        %p Assign a team member to check in periodically with a student you are hosting to help with projects and to evaluate their technical ability and work style. Mentors can also help students by pairing to work on a bug or a feature in a prominent open source project.
 
