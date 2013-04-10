@@ -1,16 +1,16 @@
-#content
-  #intro
+%section.content
+  .intro
     .wrapper
       %h2 What is the Portland Code School?
       %p The program is for smart, creative, passionate, super-rad people who want to learn code and jump-start a career in web development.
       %p The program is designed to teach students the essentials of programming quickly and give them the tools and support they need to keep learning and growing as a developer. Portland is a top-notch city for developers; we make sure that it's an oasis for newcomers.
     
-  #announcements
+  %section.announcements
 
-  #accolades
+  %section.accolades
     .wrapper.clearfix
       %h2 What people are saying about PCS
-      .col-3
+      %article
         .picture
           %img{:src => "/images/face.png"}
         .quote
@@ -18,7 +18,7 @@
           .meta
             %strong Fname Lname
             %p.company CrowdCompass
-      .col-3
+      %article
         .picture
           %img{:src => "/images/face.png"}
         .quote
@@ -26,7 +26,7 @@
           .meta
             %strong Fname Lname
             %p.company CrowdCompass
-      .col-3
+      %article
         .picture
           %img{:src => "/images/face.png"}
         .quote
@@ -35,46 +35,43 @@
             %strong Fname Lname
             %p.company CrowdCompass
             
-  #badge
+  %section.badge
     .wrapper.clearfix
       %img{:src => "/images/pcs-badge.png"}
 
-  #stakeholders
-    .wrapper.clearfix
-      .col-2
-        %h2 Students
-        %p Whether you're coming from another career or already know some programming, you probably have a lot of questions about this program. Click here to get started on your way to a career full of creativity and joy.
-        .call-to-action
-          %a.button{:href => "/program.html"} Learn More
-      .col-2
-        %h2 Employers
-        %p Finding awesome people that work hard and get along with clients can be hard. We've done the work for you; all you need to do is find the student that matches your company style and show them where to sit.
-        .call-to-action
-          %a.button{:href => "/hire.html"} Learn More
+  %section.stakeholders
+    .wrapper
+      %h2 Students
+      %p Whether you're coming from another career or already know some programming, you probably have a lot of questions about this program. Click here to get started on your way to a career full of creativity and joy.
+      .call-to-action
+        %a.button{:href => "/program.html"} Learn More
+      %h2 Employers
+      %p Finding awesome people that work hard and get along with clients can be hard. We've done the work for you; all you need to do is find the student that matches your company style and show them where to sit.
+      .call-to-action
+        %a.button{:href => "/hire.html"} Learn More
 
-  #partners
-    .wrapper.clearfix
-      .col-1
-        %h2 Our Partners
-        %a{:href => "http://newrelic.com/jobs"}
-          %img{:src => "/images/partner_company_logos/new_relic_logo_100x100.png"}
-        %a{:href => "http://www.crowdcompass.com/"}
-          %img{:src => "/images/partner_company_logos/crowd_compass_logo_200x100.png"}
-        %a{:href => "https://www.theclymb.com/careers"}
-          %img{:src => "/images/partner_company_logos/clymb_logo_200x100.png"}
-        %a{:href => "http://www.opensourcery.com/"}
-          %img{:src => "/images/partner_company_logos/opensourcery_logo_200x100.png"}
-        %a{:href => "https://www.engineyard.com/company/careers"}
-          %img{:src => "/images/partner_company_logos/engine_yard_logo_100x100.png"}
-        %a{:href => "http://showyou.com/jobs"}
-          %img{:src => "/images/partner_company_logos/showyou-black-200x100.png"}
-        %a{:href => "http://www.elementaltechnologies.com/company/careers/opportunities-at-elemental"}
-          %img{:src => "/images/partner_company_logos/elemental_logo_100x100.png"}
-        %a{:href => "http://www.jivesoftware.com/careers/"}
-          %img{:src => "/images/partner_company_logos/jive_logo_100x100.jpg"}
-        %a{:href => "http://www.theotherfirm.com/"}
-          %img{:src => "/images/partner_company_logos/the_other_firm_100x100.png"}
-      .col-1
-        %p Made With Love By Burnside Digital
-        %a{:href => "http://burnsidedigital.com"}
-          %img{:src => "/images/partner_company_logos/logo-burnside-digital-small.png"}
+  %section.partners
+    .wrapper.clearfix    
+      %h2 Our Partners
+      %a{:href => "http://newrelic.com/jobs"}
+        %img{:src => "/images/partner_company_logos/new_relic_logo_100x100.png"}
+      %a{:href => "http://www.crowdcompass.com/"}
+        %img{:src => "/images/partner_company_logos/crowd_compass_logo_200x100.png"}
+      %a{:href => "https://www.theclymb.com/careers"}
+        %img{:src => "/images/partner_company_logos/clymb_logo_200x100.png"}
+      %a{:href => "http://www.opensourcery.com/"}
+        %img{:src => "/images/partner_company_logos/opensourcery_logo_200x100.png"}
+      %a{:href => "https://www.engineyard.com/company/careers"}
+        %img{:src => "/images/partner_company_logos/engine_yard_logo_100x100.png"}
+      %a{:href => "http://showyou.com/jobs"}
+        %img{:src => "/images/partner_company_logos/showyou-black-200x100.png"}
+      %a{:href => "http://www.elementaltechnologies.com/company/careers/opportunities-at-elemental"}
+        %img{:src => "/images/partner_company_logos/elemental_logo_100x100.png"}
+      %a{:href => "http://www.jivesoftware.com/careers/"}
+        %img{:src => "/images/partner_company_logos/jive_logo_100x100.jpg"}
+      %a{:href => "http://www.theotherfirm.com/"}
+        %img{:src => "/images/partner_company_logos/the_other_firm_100x100.png"}
+    .col-1
+      %p Made With Love By Burnside Digital
+      %a{:href => "http://burnsidedigital.com"}
+        %img{:src => "/images/partner_company_logos/logo-burnside-digital-small.png"}

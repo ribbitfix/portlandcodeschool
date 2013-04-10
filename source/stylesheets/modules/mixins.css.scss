@@ -1,0 +1,39 @@
+//Variables
+
+//Temporary Site Update
+$blue: #16354A;
+$main-bg-color: #FFF;
+$orange: #E25B29;
+$tan: #AA9E84;
+$text-color: #594F4F;
+$white: #ffffff;
+
+$bg-color: #AA9E84;
+$highlight-color: #E25B29;
+$link-color: #E25B29;
+$title-color: #16354A;
+
+
+// clear fix
+
+@mixin clearfix{
+	content: " ";
+	clear: both;
+	display: block;
+	font-size: 0;
+	height: 0;
+	visibility: hidden;	
+}
+
+@mixin no-space {
+	margin: 0;
+	padding: 0;
+}
+
+@mixin left {
+	float: left;
+}
+
+@mixin right {
+	float: right;
+}

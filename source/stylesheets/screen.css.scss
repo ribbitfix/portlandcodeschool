@@ -1,7 +1,9 @@
 //Imports
+@import "bourbon";
+@import "modules/mixins.css.scss";
 @import "modules/grid.css.scss";
 @import "modules/normalize.css";
-@import "modules/colors.css.scss";
+
 
 //Grid
 header{
@@ -14,62 +16,62 @@ header a{
   text-decoration: none;
 }
 body{
-  height: 100%;
-  font-family: Helvetica, 'Helvetica Neue', Arial, sans-serif;
   background: $bg-color;
   color: $text-color;
+  font-family: Helvetica, 'Helvetica Neue', Arial, sans-serif;
+  height: 100%;
   line-height: 1.5;
 }
-#menu ul{
+.menu ul{
   margin-left: 15px;
   text-align: center;
   width: 100%;
 }
-#menu li{
+.menu li{
   margin-right: 12px;
   list-style: none;
   display: inline-block;
 }
-#menu li a{
+.menu li a{
   color: white;
   font-weight: normal;
   font-size: ($font-size + 8) / $em;
   text-decoration: none;
   text-shadow: 0px 2px 0px $title-color;
 }
-#menu li a:hover{
+.menu li a:hover{
   text-shadow: 1px 3px 1px $title-color;
 }
-#wrapper{
-  padding: 24px;
+.wrapper{
   background-color: $main-bg-color;
   border-right: 4px $highlight-color solid;
   border-left: 4px $highlight-color solid;
-  min-height: 100%;
   box-shadow: 0px -5px 10px #666;
+  min-height: 100%;
+  padding: 24px;
 }
 h1{
-  width: 100%;
+  color: $title-color;
   display: block;
-  font-family: 'Press Start 2P', Helvetica, Arial, sans-serif;
-  text-shadow: 0px 2px 1px $highlight-color;
   filter: dropshadow(color=$highlight-color, offx=0, offy=1);
+  font-family: 'Press Start 2P', Helvetica, Arial, sans-serif;
   margin-top: 0px;
   padding-top: 10px;
-  color: $title-color;
+  text-shadow: 0px 2px 1px $highlight-color;
+  width: 100%;
 }
 h2, h3, h4, h5, h6 {
-  font-family: 'ABeeZee', sans-serif;
   color: $title-color;
-  margin-top: 10px;
+  font-family: 'ABeeZee', sans-serif;
   font-weight: lighter;
+  margin-top: 10px;
 }
 h3 {
   color: $highlight-color;
 }
-header p, #intro p{
-  text-align: justify;
+header p, .intro p{
   font-style: italic;
+  text-align: justify;
 }
 header img{
   width:100%;
@@ -78,8 +80,8 @@ header img{
 footer {
   text-align: center;
   input {
-    width: 73%;
     margin-bottom: 8px;
+    width: 73%;
   }
   .button {
     width: 75%;
@@ -103,7 +105,6 @@ a.disabled {
   color: #ccc;
 }
 ul{
-  margin-left: $gutter;
   margin-bottom: 1em;
   ul {
     margin-bottom: 0;
@@ -117,8 +118,8 @@ p{
   margin-bottom: .75em;
 }
 hr{
-  border-bottom: 1px solid $title-color;
   border-top:none;
+  border-bottom: 1px solid $title-color;
   margin-bottom: 1em;
 }
 h2{
@@ -128,10 +129,10 @@ h3{
   margin-bottom: 6px / $em;
 }
 table {
+  border-top: 1px solid $highlight-color;
+  border-left: 1px solid $highlight-color;
   color: $title-color;
   width: 100%;
-  border-left: 1px solid $highlight-color;
-  border-top: 1px solid $highlight-color;
   a, a:visited{
     color: $title-color;
   }
@@ -145,14 +146,14 @@ table {
     background-color: lighten($bg-color, 30%);
   }
   td, th {
-    padding: 8px;
     border-right: 1px solid $highlight-color;
+    padding: 8px;
   }
   th {
-    text-align: left;
-    border-right: 1px solid white;
     border-top: 1px solid white;
+    border-right: 1px solid white;
     border-left: 1px solid white;
+    text-align: left;
     padding-bottom: 4px;
   }
 }
@@ -161,8 +162,8 @@ table {
 }
 .right{
   float: right;
-  padding-left: 20px;
   padding-bottom: 20px;
+  padding-left: 20px;
 }
 .left{
   float: left;
@@ -171,28 +172,27 @@ table {
 }
 .button, a.button{
   background-color: $highlight-color;
+  border: none;
   border-radius: 5px;
-  padding: 5px;
-  font-weight: bold;
+  box-shadow: 1px 2px #ccc;
   color: white;
-  text-decoration: none;
   display: block;
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 5px;
+  text-decoration: none;
   width: 50%;
   text-align: center;
-  margin: 0 auto;
-  box-shadow: 1px 2px #ccc;
-  border: none;
 }
 .image-row .sixth-col, .image-row .third-col {
   text-align: center;
 }
 .image-row a{
-  position: relative;
   line-height: 100px;
+  position: relative;
   img{
     max-height: 98px;
     vertical-align: middle;
   }
 }
 
-@import "responsive.css.scss";

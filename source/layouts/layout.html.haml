@@ -12,7 +12,7 @@
 
     %link{:rel => "shortcut icon", :href => "/favicon.ico"}
     %link{:rel => "stylesheet", :href => "/stylesheets/site.css"}
-    %link{:rel => "stylesheet", :href => "/stylesheets/responsive.css"}
+    / %link{:rel => "stylesheet", :href => "/stylesheets/responsive.css"}
 
   %body{:lang => "en"}
     %header
@@ -23,7 +23,7 @@
           %h1
             .logo-text-top Portland
             .logo-text-bottom Code School
-        #site_nav
+        %nav.site_nav
           %ul
             %li
               %a{:href => "/"}Home
@@ -38,17 +38,15 @@
 
     = yield
 
-    %footer#foot.clearfix
-      .wrapper
-        .col-3
-          %h3 Mailing List
-          #mc_embed_signup
-            %form{:action => "http://chuckvose.us1.list-manage.com/subscribe/post?u=bf62c907d00a592feb0eb305f&amp;id=50dbf0b987", :method => "post", :id => "mc-embedded-subscribe-form", :name => "mc-embedded-subscribe-form", :class => "validate", :target => "_blank" }
-              .mc-field-group
-                %input{:type => "email", :value => "", :name => "EMAIL", :placeholder => "Email Address", :class => "required email", :id => "mce-EMAIL"}
-                %input{:type => "submit", :name => "subscribe", :id => "mc-embedded-subscribe", :class => "button"}
+    %footer.foot
+      %section
+        %h3 Mailing List
+        #mc_embed_signup
+          %form{:action => "http://chuckvose.us1.list-manage.com/subscribe/post?u=bf62c907d00a592feb0eb305f&amp;id=50dbf0b987", :method => "post", :id => "mc-embedded-subscribe-form", :name => "mc-embedded-subscribe-form", :class => "validate", :target => "_blank" }
+            .mc-field-group
+              %input{:type => "email", :value => "", :name => "EMAIL", :placeholder => "Email Address", :class => "required email", :id => "mce-EMAIL"}
+              %input{:type => "submit", :name => "subscribe", :id => "mc-embedded-subscribe", :class => "button"}
 
-        .col-3
           %h3 Links
           %ul
             %li
@@ -57,8 +55,7 @@
               %a{:href => "faq.html"}Questions
             %li
               %a{:href => "http://www.github.com/portlandcodeschool"}Github
-
-        .col-3
+          
           %h3 Contact Us
           %p
             %a{:href => "mailto:info@portlandcodeschool.com"}info@portlandcodeschool.com

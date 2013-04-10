@@ -1,83 +1,116 @@
-@import "modules/colors.css.scss";
+//Imports
+@import "bourbon";
+@import "modules/mixins.css.scss";
+@import "modules/grid.css.scss";
 
-/*
-  Mobile layout
-  240–479 px
-  Zoomed out below 320 px
-*/
-@media screen and (min-width: 15em) and (max-width: 30em) {
+// /*
+//   Mobile layout
+//   240–479 px
+//   Zoomed out below 320 px
+// */
+// @media only screen and (min-width: 15em) and (max-width: 30em) {
+//   //Typography
+//   p,ul,td,th{
+//     font-size: ($font-size - 1) / $em;
+//   }
+//   ul ul{
+//     font-size: 1em;
+//   }
+//   li a{
+//     font-size: ($font-size - 1) / $em;
+//   }
+//   h1{
+//     font-size: ($font-size +11) / $em;
+//     margin-bottom: 4px / $em;
+//     padding-top: 8px / $em;
+//   }
+//   h2{
+//     font-size: ($font-size + 3) / $em;
+//   }
+//   h3{
+//     font-size: ($font-size + 1) / $em;
+//   }
+//   //Grid
+//   #container, #wrapper{
+//     @include width(4);
+//     margin: 0 auto;
+    
+//   }
 
-  //Typography
-  p,ul,td,th{
-    font-size: ($font-size - 1) / $em;
-  }
-  ul ul{
-    font-size: 1em;
-  }
-  li a{
-    font-size: ($font-size - 1) / $em;
-  }
-  h1{
-    font-size: ($font-size +11) / $em;
-    margin-bottom: 4px / $em;
-    padding-top: 8px / $em;
-  }
-  h2{
-    font-size: ($font-size + 3) / $em;
-  }
-  h3{
-    font-size: ($font-size + 1) / $em;
-  }
-  //Grid
-  #container, #wrapper{
-    margin: 0 auto;
-    @include width(4);
-  }
-
-  .left-col, .right-col, .full-width, .third-col, .readable-width{
-    @include width(4);
-  }
-  .sixth-col{
-    @include width(2);
-    float: left;
-  }
-  #intro{
-    text-align: left;
-  }
-  #cta {
-    position: relative;
-    left: -24px;
-    padding: 12px 24px;
-  }
-  #menu ul{
-    position: relative;
-    left: -40px;
-    width: 280px;
-    background-color: $highlight-color;
-    padding: 8px;
-    margin-top: 15px;
-    padding-left: 25px;
-  }
-  #menu ul li{
-    text-align: left;
-    width: 100%;
-    margin-top: 5px;
-  }
-  #menu ul li a{
-    font-size: ($font-size + 5) / $em;
-    text-shadow: none;
-  }
-  #alumni{
-    display: none;
-  }
-}
+//   .left-col, .right-col, .full-width, .third-col, .readable-width{
+//     @include width(4);
+//   }
+//   .sixth-col{
+//     @include width(2);
+//     float: left;
+//   }
+//   #intro{
+//     text-align: left;
+//   }
+//   #cta {
+//      padding: 12px 24px;
+//     position: relative;
+//     left: -24px;
+//   }
+//   #menu ul{
+//     background-color: $highlight-color;
+//     margin-top: 15px;
+//     padding: 8px;
+//     padding-left: 25px;
+//     position: relative;
+//     left: -40px;
+//     width: 280px;
+//   }
+//   #menu ul li{
+//     margin-top: 5px;
+//     text-align: left;
+//     width: 100%;
+//   }
+//   #menu ul li a{
+//     font-size: ($font-size + 5) / $em;
+//     text-shadow: none;
+//   }
+//   #alumni{
+//     display: none;
+//   }
+// }
 /*
   Wide mobile layout
   480-767 px
   Zoomed in above 480 px
 */
-@media screen and (min-width: 30em) and (max-width: 37.5em) {
+@media only screen and (min-width: 20em) and (max-width: 37.5em) {
+  html body {
+    @include box-sizing(border-box);
+    font-size: 16px;
+    width: 100%;
+    .wrapper {
+      margin: 0 auto;
+      width: 90%;
+      .site_nav ul {
+        margin: 0;
+        li {
+          padding: 0 0.46em;
+        }
+      }
+    }
+  }
 
+  .intro .wrapper {
+    h2 {
+      font-size: 1.125em; //18px
+    }
+    p {
+      @include no-space;
+    } 
+  }
+
+  .badge {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
   //Typography
   p,ul,td,th{
     font-size: ($font-size - 2) / $em;
@@ -88,14 +121,11 @@
   h1{
     font-size: ($font-size + 20) / $em;
   }
-  h2{
-    font-size: 1.2em;
-  }
   //Grid
-  #container, #wrapper {
+  .wrapper {
     margin: 0 auto;
   }
-  #container, #wrapper, .left-col, .right-col, .full-width, .third-col, .readable-width{
+  .wrapper, .left-col, .right-col, .full-width, .third-col, .readable-width{
     @include width(6);
   }
   .sixth-col{
@@ -105,17 +135,17 @@
     text-align: left;
   }
   #cta {
+    padding: 12px 24px;
     position: relative;
     left: -24px;
-    padding: 12px 24px;
   }
   #menu ul{
+    background-color: $highlight-color;
+    margin-top: 15px;
+    padding: 8px;
     position: relative;
     left: -40px;
     width: 445px;
-    background-color: $highlight-color;
-    padding: 8px;
-    margin-top: 15px;
   }
   #menu ul li a{
     font-size: 1.5em;
@@ -123,8 +153,8 @@
   }
   #homepage #sponsors {
     h2 {
-      text-align: center;
       padding-top: 20px;
+      text-align: center;
     }
     .image-row {
       text-align: center;
@@ -188,25 +218,25 @@
     float: left;
   }
   #cta {
+    padding: 12px 24px;
     position: relative;
     left: -24px;
-    padding: 12px 24px;
   }
   #menu ul{
+    background-color: $highlight-color;
+    margin-top: 15px;
+    padding: 8px;
     position: relative;
     left: -40px;
     width: 585px;
-    background-color: $highlight-color;
-    padding: 8px;
-    margin-top: 15px;
   }
   #menu ul li a{
     font-size: ($font-size + 3) / $em;
   }
   #homepage #sponsors {
     h2 {
-      text-align: center;
       padding-top: 20px;
+      text-align: center;
     }
     .image-row {
       margin-left: $cols4;
@@ -218,7 +248,7 @@
   912-1887 px
   Zoomed in above 912 px
 */
-@media screen and (min-width: 57em) {
+@media only screen and (min-width: 57em) {
   //Typography
   p {
     font-size: ($font-size) / $em;
@@ -248,9 +278,8 @@
     clear: both;
   }
   .readable-width{
-    margin-left: (1 * ($column + $gutter)) / $em;
     @include width(10);
-
+    margin-left: (1 * ($column + $gutter)) / $em;
     li {
       margin-left: 5px;
       padding-bottom: 4px;
@@ -274,12 +303,12 @@
   }
 
   h2{
+    border-bottom: 1px dashed $title-color;
     color: $title-color;
+    display: block;
     margin-top: 30px;
     margin-bottom: 30px;
-    display: block;
     text-align: center;
-    border-bottom: 1px dashed $title-color;
   }
 
   header img{
@@ -288,12 +317,12 @@
     padding-left: 15px;*/
   }
   #menu ul{
+    background-color: $highlight-color;
+    margin-top: 40px;
+    padding: 8px;
     position: relative;
     left: -40px;
     width: 875px;
-    background-color: $highlight-color;
-    padding: 8px;
-    margin-top: 40px;
   }
   #menu ul li.first{
     margin-left: 24px;
@@ -305,13 +334,13 @@
     padding: 0 100px;
   }
   #cta {
-    margin: 1em auto 3em;
-    padding: 24px 36px;
     border: 2px solid $bg-color;
-    width: 700px;
     -moz-box-shadow:4px 4px 7px rgba(33,33,33,1);
     -webkit-box-shadow: 4px 4px 7px rgba(33,33,33,.7);
     box-shadow: 4px 4px 7px rgba(33,33,33,.7);
+    margin: 1em auto 3em;
+    padding: 24px 36px;
+    width: 700px;
     .left-col, .right-col {
       width: 21em;
     }
@@ -319,9 +348,9 @@
       margin-bottom: 0.5em;
     }
     h3 {
-      margin-bottom: 0.75em;
-      font-weight: bold;
       font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 0.75em;
     }
     p {
       margin-bottom: 0.5em;
@@ -331,12 +360,12 @@
     }
   }
   footer {
+    border-top: 5px solid $highlight-color;
     position: relative;
     left: -24px;
-    width: 875px;
-    padding: 8px;
     margin-top: 40px;
-    border-top: 5px solid $highlight-color;
+    padding: 8px;
+    width: 875px;
   }
 
   #homepage #sponsors {
