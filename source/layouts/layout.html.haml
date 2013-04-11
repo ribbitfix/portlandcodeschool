@@ -16,25 +16,24 @@
 
   %body{:lang => "en"}
     %header
-      .wrapper
-        %a{:href => "/"}
-          / %img{:src => "/images/pcs.jpg", :alt => "Portland Code School"}
-          %img{:src => "/images/orange_rose_transparent.png", :alt => "Portland Code School"}
-          %h1
-            .logo-text-top Portland
-            .logo-text-bottom Code School
-        %nav.site_nav
-          %ul
-            %li
-              %a{:href => "/"}Home
-            %li
-              %a{:href => "/program.html"}Program
-            %li
-              %a{:href => "/hire.html"}Employers
-            %li
-              %a{:href => "/community.html"}Community
-            %li
-              %a.button{:href => "/apply.html"}Apply Now
+      %a{:href => "/"}
+        / %img{:src => "/images/pcs.jpg", :alt => "Portland Code School"}
+        %img{:src => "/images/orange_rose_transparent.png", :alt => "Portland Code School"}
+        %h1
+          .logo-text-top Portland
+          .logo-text-bottom Code School
+      %nav.site_nav
+        %ul
+          %li
+            %a{:href => "/"}Home
+          %li
+            %a{:href => "/program.html"}Program
+          %li
+            %a{:href => "/hire.html"}Employers
+          %li
+            %a{:href => "/community.html"}Community
+          %li
+            %a.button{:href => "/apply.html"}Apply Now
 
     = yield
 
