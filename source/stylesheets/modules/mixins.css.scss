@@ -14,17 +14,6 @@ $link-color: #E25B29;
 $title-color: #16354A;
 
 
-// clear fix
-
-@mixin clearfix{
-	content: " ";
-	clear: both;
-	display: block;
-	font-size: 0;
-	height: 0;
-	visibility: hidden;	
-}
-
 @mixin no-space {
 	margin: 0;
 	padding: 0;
@@ -36,4 +25,22 @@ $title-color: #16354A;
 
 @mixin right {
 	float: right;
+}
+
+@mixin no-float {
+  clear: both;
+}
+
+.white-background {
+	background: $white;
+  border-radius: 5px;
+  color: $orange;
+  font-size: em(12);
+  padding: 2px 7px;
+  &:hover {
+    background: darken($orange, 10%);
+   }
+   a:hover {
+   	color: $title-color!important;
+   }
 }

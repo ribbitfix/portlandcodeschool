@@ -71,7 +71,7 @@ header {
   img {
     display: inline-block;
     height: 80px;
-    margin: 15px 0;
+    margin: 15px 0 0 15px;
   }
   h1 {
     display: inline-block;
@@ -105,12 +105,20 @@ header {
 }
 .page {
   margin-top: 170px;
+  section {
+    @include clearfix;
+    margin: 0 auto;
+    width: 90%;
+  }
 }
 
-.wrapper {
+.statements {
+  @include clearfix;
+  background: $orange;
+  width: 90%;
   margin: 0 auto;
-  width: 960px;
 }
+
 
 .intro {
   background: $tan;
@@ -123,6 +131,7 @@ header {
   height: 410px;
   .wrapper {
     padding-top:70px;
+
   }
   h2 {
     color: $orange;
@@ -163,8 +172,7 @@ header {
 }
 .tan {
   background: $tan;
-  margin: 40px 0;
-  padding: 40px 0;
+  width: 100%;
   h2, h3 {
     color: white;
   }
@@ -196,16 +204,19 @@ header {
   }
 }
 .engagement {
-  img {
-    @include left;
-    display: block;
-    height: 100px;
-    margin-right: 20px;
-    margin-top: 2.5em;
-  }
-  p {
-    margin-left: 120px;
-  }
+  div {
+    @include clearfix;
+    img {
+      @include left;
+      display: block;
+      height: 100px;
+      margin-right: 20px;
+      margin-top: 2.5em;
+    }
+    p {
+      margin-left: 120px;
+    }
+  }  
 }
 
 hr {
