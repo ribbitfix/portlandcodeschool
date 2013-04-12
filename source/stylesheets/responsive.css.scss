@@ -17,12 +17,29 @@
         ul {
         margin: em(10) 0;
         li {
+          background: $orange;
+          border-bottom: 1px solid rgba( 255, 255, 255, 0.4);
+          display: block;
+          float: none;
+          font-size: em(20);
           padding: 0 0.46em;
+          a {
+            color: $white;
+            &.button {
+              @include no-space;
+              &:hover {
+                background: none;
+              }
+            }
+          }
         }
       }
     }
   }
 
+  div.content {
+    margin-top: em(250);
+  }
   h1 div {
     font-size: em(12);
   }
@@ -124,6 +141,7 @@
     display: block;
     margin-top: em(30);
     margin-bottom: em(30);
+    padding-top: em(20);
     text-align: center;
   }
 
@@ -216,12 +234,15 @@
     font-size: em(26);
   }
 
-  h2{
+  .intro .width h2{
     border-bottom: 1px dashed $title-color;
-    color: $title-color;
+    color: $orange;
     display: block;
-    margin-top: em(30);
-    margin-bottom: em(30);
+    font-family: "Weston-Free";
+    font-size: em(40);
+    margin-top: em(20);
+    margin-bottom: em(20);
+    padding-top: em(30);
     text-align: center;
   }
 
