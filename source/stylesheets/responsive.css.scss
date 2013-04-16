@@ -40,6 +40,10 @@
   div.content {
     margin-top: em(250);
   }
+  div.page{
+    margin-top: em(270);
+  }
+
   h1 div {
     font-size: em(12);
   }
@@ -52,6 +56,10 @@
     p {
       @include no-space;
     } 
+  }
+
+  .intro p {
+    font-size: em(14);
   }
 
   .accolades .quote {
@@ -86,9 +94,8 @@
   }
 
   footer.foot section {
-    width: 80%;
+    width: 70%;
   }
-
 
   //Typography
   p,ul,td,th{
@@ -119,31 +126,6 @@
 */
 
 @media screen and (min-width: 34.375em) and (max-width: 71.87em) {
-
-  //Typography
-  p,ul,td,th {
-    font-size: em(16);
-  }
-
-  ul ul {
-    font-size: 1em;
-  }
-  h1 {
-    font-size: em(46);
-  }
-  h2 {
-    font-size: em(19);
-  }
-
-  h2{
-    border-bottom: 1px dashed $title-color;
-    color: $title-color;
-    display: block;
-    margin-top: em(30);
-    margin-bottom: em(30);
-    padding-top: em(20);
-    text-align: center;
-  }
 
   .site_nav {
     float: none;
@@ -189,7 +171,9 @@
     }
 
   .white-background {
-    width: 30%;
+    text-align: center;
+    width: 50%;
+
   }
 
   #cta {
@@ -217,6 +201,31 @@
       margin-left: $cols4;
     }
   }
+}
+
+//Typography
+p,ul,td,th {
+  font-size: em(16);
+}
+
+ul ul {
+  font-size: 1em;
+}
+h1 {
+  font-size: em(46);
+}
+h2 {
+  font-size: em(19);
+}
+
+h2{
+  border-bottom: 1px dashed $title-color;
+  color: $title-color;
+  display: block;
+  margin-top: em(30);
+  margin-bottom: em(30);
+  padding-top: em(20);
+  text-align: center;
 }
 /*
   max-width 1150px
@@ -344,9 +353,9 @@
 
     div {
       @include left;
-      width: 30%;
+      width: 20%;
       &:first-child {
-        width: 40%;
+        width: 50%;
       }
       &.last {
         @include right;
