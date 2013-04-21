@@ -37,11 +37,11 @@
     }
   }
 
-  div.content {
-    margin-top: em(250);
+  header {
+    position: static;
   }
-  div.page{
-    margin-top: em(270);
+  .intro, .content {
+    margin-top: 0;
   }
 
   h1 div {
@@ -52,6 +52,7 @@
     h2 {
       font-size: em(18); //18px
       padding-top: em(30);
+      margin-top: 0;
     }
     p {
       @include no-space;
