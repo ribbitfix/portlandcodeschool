@@ -255,9 +255,13 @@ h2{
     text-align: center;
   }
 
+  header > div {
+    float: left;
+    margin-right: 50%;
+  }
   .site_nav {
-    margin-top: em(40);
-    float: right;
+    float: left;
+    padding: em(50) 0 0 0;
   }
 
   header img{
