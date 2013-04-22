@@ -16,13 +16,21 @@
   %body{:lang => "en"}
     %a#top
     %header
+<<<<<<< HEAD
       %div
         %a{:href => "/"}
+          / %img{:src => "/images/pcs.jpg", :alt => "Portland Code School"}
           %img{:src => "/images/orange_rose_transparent.png", :alt => "Portland Code School"}
           %h1
             .logo-text-top Portland
             .logo-text-bottom Code School
-            
+=======
+      %a{:href => "/"}
+        %img{:src => "/images/orange_rose_transparent.png", :alt => "Portland Code School"}
+        %h1
+          .logo-text-top Portland
+          .logo-text-bottom Code School
+>>>>>>> a75314220d29ad10115937a5d12e32da55844e81
       %nav.site_nav
         %ul
           %li

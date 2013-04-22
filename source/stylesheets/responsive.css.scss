@@ -7,7 +7,7 @@
 /*
   min-width 320px and max-width 480px
 */
-@media only screen and (min-width: 20em) and (max-width: 30em) {
+@media only screen and (min-width: 20em) and (max-width: 34.375em) {
   html body {
     @include box-sizing(border-box);
     font-size: em(16);
@@ -37,11 +37,11 @@
     }
   }
 
-  div.content {
-    margin-top: em(250);
+  header {
+    position: static;
   }
-  div.page{
-    margin-top: em(270);
+  .intro, .content {
+    margin-top: 0;
   }
 
   h1 div {
@@ -52,10 +52,11 @@
     h2 {
       font-size: em(18); //18px
       padding-top: em(30);
+      margin-top: 0;
     }
     p {
       @include no-space;
-    } 
+    }
   }
 
   .intro p {
@@ -129,7 +130,7 @@
 
   .site_nav {
     float: none;
-    clear:both;
+    clear: both;
     ul {
       margin: em(15) 0;
     }
@@ -314,16 +315,16 @@ h2{
   }
 
   .quote {
-      @include left;
       font-size: em(14);
-      width: 50%;
+      width: 100%;
     }
 
   article {
     @include clearfix;
     @include left;
-    margin: no-space;
-    width: 31.25%;
+    @include no-space;
+    margin-bottom: em(32);
+    width: 33.25%;
     &.last {
       @include right;
       margin-right: 0;
@@ -331,7 +332,7 @@ h2{
   }
 
   .width {
-    width: 90%;
+    width: 70%;
     margin: 0 auto;
   }
 
@@ -348,7 +349,7 @@ h2{
     margin-top: 40px;
     padding: 8px;
     width: 875px;
-   
+
     section {
       @include clearfix;
       margin: 0 auto;
@@ -370,7 +371,7 @@ h2{
       }
     }
   }
-  
+
 
   #homepage #sponsors {
     .image-row {
