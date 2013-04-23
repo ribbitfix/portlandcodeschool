@@ -56,13 +56,17 @@
     }
   }
   .width {
+    margin-bottom: em(30);
     h2 {
-      padding-top: em(30);
       margin-top: 0;
+      padding-top: 0;
     }
     p {
       @include no-space;
     }
+  }
+  .intro .width h2 {
+    padding-top: em(60);
   }
 
   .intro p {
@@ -85,6 +89,7 @@
   }
 
   .page {
+    margin-top: 0;
     h2 {
       font-size: em(18);
     }
