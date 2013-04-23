@@ -346,7 +346,7 @@ h2{
     margin-bottom: em(32);
     width: 33.25%;
     &.last {
-      @include right;
+      @include left;
       margin-right: 0;
     }
   }
