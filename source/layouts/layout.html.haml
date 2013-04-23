@@ -22,7 +22,7 @@
           %h1
             .logo-text-top Portland
             .logo-text-bottom Code School
-            
+
       %nav.site_nav
         %ul
           %li
@@ -34,19 +34,19 @@
           %li
             %a{:href => "/community.html"}Community
           %li
-            %a.button{:href => "/apply.html"}Apply Now
+            %a.button.apply{:href => "/apply.html"}Apply Now
 
     = yield
 
-    %footer.foot
-      %section
+    %footer.foot.tan
+      %section.width
         #mc_embed_signup
           %h3 Mailing List
           %form{:action => "http://chuckvose.us1.list-manage.com/subscribe/post?u=bf62c907d00a592feb0eb305f&amp;id=50dbf0b987", :method => "post", :id => "mc-embedded-subscribe-form", :name => "mc-embedded-subscribe-form", :class => "validate", :target => "_blank" }
             .mc-field-group
               %input{:type => "email", :value => "", :name => "EMAIL", :placeholder => "Email Address", :class => "required email", :id => "mce-EMAIL"}
               %input{:type => "submit", :name => "subscribe", :id => "mc-embedded-subscribe", :class => "button"}
-        %div
+        %div.centered
           %h3 Links
           %ul
             %li

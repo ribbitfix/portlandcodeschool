@@ -29,6 +29,9 @@ h2 {
   margin: 0.5em 0 0.5em;
   text-align:center;
 }
+h3 {
+  font-family: 'Weston-Free';
+}
 p {
   margin-bottom: em(10);
 }
@@ -43,10 +46,16 @@ a, a:visited {
     background: $orange;
     border-radius: em(5);
     color: white;
-    padding: em(8) em(14);
+    padding: 10px 80px;
+    margin: 0 auto;
     &:hover {
       background: darken($orange, 10%);
       color:white;
+    }
+    &.apply {
+      display: inline;
+      padding: em(8) em(14);
+      margin-bottom: 0em;
     }
   }
 }
@@ -135,9 +144,7 @@ header {
     }
     &.button {
       background: white;
-      border-radius: 5px;
       color: $orange;
-      padding: 8px 14px;
       &:hover {
         background: darken(white, 10%);
       }
@@ -149,7 +156,8 @@ header {
   background: $tan;
   width: 100%;
   h2, h3 {
-    color: white;
+    color: $white;
+    text-shadow: 0 2px 0px $text-color;
   }
   a, a:visited {
     color: $blue;
@@ -204,7 +212,6 @@ header {
   color: white;
   h2 {
     color: white;
-    padding: 50px 0;
     text-align: center;
   }
   .picture {
@@ -283,24 +290,22 @@ header {
   }
 }
 
-.stakeholders {
+.stakeholders.width {
+  margin-top: 60px;
   h2 {
     margin: 1.5em 0 0 0;
     text-align: center;
   }
-  .call-to-action {
-    margin-top: 40px;
-    text-align: center;
-    width: 100%;
-  }
-  a.button {
-    padding: 10px 80px;
-  }
-
+}
+.call-to-action {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100%;
 }
 
 .partners {
-  margin-top: 100px;
+  margin-top: 30px;
   text-align: center;
   img {
     margin: 10px 20px;
@@ -328,7 +333,9 @@ hr {
 table {
   border-left: 1px solid $orange;
   border-top: 1px solid $orange;
-  margin: 40px 0 60px 0;
+  margin-top: 40px;
+  width: 100%;
+  background-color: $white;
   tbody {
     display: table-row-group;
     vertical-align: middle;
@@ -339,9 +346,10 @@ table {
     padding: 8px;
   }
   th {
-    border-right: 1px solid white;
-    border-top: 1px solid white;
-    border-left: 1px solid white;
+    background-color: $tan;
+    border-right: 1px solid $tan;
+    border-top: 1px solid $tan;
+    border-left: 1px solid $tan;
     padding-bottom: 4px;
     text-align: left;
   }
@@ -357,16 +365,16 @@ footer, .foot {
   @include clearfix;
   background-color: $tan;
   color: white;
-  margin: 30px 0 0 0;
-  padding:30px 0 0 0;
   position: static;
   width: 100%;
   section {
-    width: 95%;
     margin: 0 auto;
   }
-
+  .centered {
+    text-align: center;
+  }
   h3 {
+    margin-top: 0;
     color: #fff;
     font-weight: 400;
   }

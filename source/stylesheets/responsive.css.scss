@@ -221,12 +221,20 @@ h2 {
 
 h2{
   border-bottom: 1px dashed $title-color;
-  color: $title-color;
+  color: $orange;
   display: block;
   margin-top: em(30);
   margin-bottom: em(30);
   padding-top: em(20);
   text-align: center;
+}
+.tan, .orange {
+  margin-top: em(30);
+  margin-bottom: em(30);
+  padding: em(30) 0;
+  .width {
+    margin-bottom: 0;
+  }
 }
 /*
   max-width 1150px
@@ -242,6 +250,9 @@ h2{
   }
   h2{
     font-size: em(26);
+  }
+  h3 {
+    margin-top: 1.25em;
   }
 
   .intro .width h2{
@@ -334,6 +345,11 @@ h2{
   .width {
     width: 70%;
     margin: 0 auto;
+    margin-bottom: em(30);
+    h2 {
+      margin-top: 0;
+      padding-top: 0;
+    }
   }
 
   .white-background {
@@ -342,7 +358,7 @@ h2{
   }
 
   footer {
-     @include clearfix;
+    @include clearfix;
     border-top: 5px solid $highlight-color;
     position: relative;
     left: -24px;
@@ -358,10 +374,7 @@ h2{
 
     div {
       @include left;
-      width: 20%;
-      &:first-child {
-        width: 50%;
-      }
+      width: 33%;
       &.last {
         @include right;
         text-align: right;
