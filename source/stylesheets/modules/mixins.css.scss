@@ -1,0 +1,46 @@
+//Variables
+
+//Temporary Site Update
+$blue: #16354A;
+$main-bg-color: #FFF;
+$orange: #E25B29;
+$tan: #AA9E84;
+$text-color: #594F4F;
+$white: #ffffff;
+
+$bg-color: #AA9E84;
+$highlight-color: #E25B29;
+$link-color: #E25B29;
+$title-color: #16354A;
+
+
+@mixin no-space {
+	margin: 0;
+	padding: 0;
+}
+
+@mixin left {
+	float: left;
+}
+
+@mixin right {
+	float: right;
+}
+
+@mixin no-float {
+  clear: both;
+}
+
+.white-background {
+	background: $white;
+  border-radius: 5px;
+  color: $orange;
+  font-size: em(12);
+  padding: 2px 7px;
+  &:hover {
+    background: darken($orange, 10%);
+   }
+   a:hover {
+   	color: $title-color!important;
+   }
+}

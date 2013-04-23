@@ -1,130 +1,128 @@
-@import "modules/colors.css.scss";
+//Imports
+@import "bourbon";
+@import "modules/mixins.css.scss";
+@import "modules/grid.css.scss";
+
 
 /*
-  Mobile layout
-  240–479 px
-  Zoomed out below 320 px
+  min-width 320px and max-width 480px
 */
-@media screen and (min-width: 15em) and (max-width: 30em) {
-
-  //Typography
-  p,ul,td,th{
-    font-size: ($font-size - 1) / $em;
-  }
-  ul ul{
-    font-size: 1em;
-  }
-  li a{
-    font-size: ($font-size - 1) / $em;
-  }
-  h1{
-    font-size: ($font-size +11) / $em;
-    margin-bottom: 4px / $em;
-    padding-top: 8px / $em;
-  }
-  h2{
-    font-size: ($font-size + 3) / $em;
-  }
-  h3{
-    font-size: ($font-size + 1) / $em;
-  }
-  //Grid
-  #container, #wrapper{
-    margin: 0 auto;
-    @include width(4);
-  }
-
-  .left-col, .right-col, .full-width, .third-col, .readable-width{
-    @include width(4);
-  }
-  .sixth-col{
-    @include width(2);
-    float: left;
-  }
-  #intro{
-    text-align: left;
-  }
-  #cta {
-    position: relative;
-    left: -24px;
-    padding: 12px 24px;
-  }
-  #menu ul{
-    position: relative;
-    left: -40px;
-    width: 280px;
-    background-color: $highlight-color;
-    padding: 8px;
-    margin-top: 15px;
-    padding-left: 25px;
-  }
-  #menu ul li{
-    text-align: left;
+@media only screen and (min-width: 20em) and (max-width: 34.375em) {
+  html body {
+    @include box-sizing(border-box);
+    font-size: em(16);
     width: 100%;
-    margin-top: 5px;
+    .site_nav {
+     float: none;
+        ul {
+        margin: em(10) 0;
+        li {
+          background: $orange;
+          border-bottom: 1px solid rgba( 255, 255, 255, 0.4);
+          display: block;
+          float: none;
+          font-size: em(20);
+          padding: 0 0.46em;
+          a {
+            color: $white;
+            &.button {
+              @include no-space;
+              &:hover {
+                background: none;
+              }
+            }
+          }
+        }
+      }
+    }
   }
-  #menu ul li a{
-    font-size: ($font-size + 5) / $em;
-    text-shadow: none;
+
+  header {
+    position: static;
   }
-  #alumni{
-    display: none;
+  .intro, .content {
+    margin-top: 0;
   }
-}
-/*
-  Wide mobile layout
-  480-767 px
-  Zoomed in above 480 px
-*/
-@media screen and (min-width: 30em) and (max-width: 37.5em) {
+
+  h1 div {
+    font-size: em(12);
+  }
+  footer.foot {
+    div {
+      margin-bottom: 20px;
+    }
+    .centered {
+      text-align: left;
+    }
+  }
+  .width {
+    margin-bottom: em(30);
+    h2 {
+      margin-top: 0;
+      padding-top: 0;
+    }
+    p {
+      @include no-space;
+    }
+  }
+  .intro .width h2 {
+    padding-top: em(60);
+  }
+
+  .intro p {
+    font-size: em(14);
+  }
+
+  .accolades .quote {
+      @include left;
+      width: 60%;
+    }
+
+  article {
+    @include clearfix;
+    @include no-float;
+    display: block;
+    width: 100%;
+    &.last {
+      @include no-float;
+    }
+  }
+
+  .page {
+    margin-top: 0;
+    h2 {
+      font-size: em(18);
+    }
+    h3 {
+      font-size: em(16);
+    }
+  }
+
+  .badge {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  footer.foot section {
+    width: 70%;
+  }
 
   //Typography
   p,ul,td,th{
-    font-size: ($font-size - 2) / $em;
+    font-size: em(14);
   }
   ul ul{
-    font-size: 1em;
+    font-size: em(16);
   }
   h1{
-    font-size: ($font-size + 20) / $em;
-  }
-  h2{
-    font-size: 1.2em;
-  }
-  //Grid
-  #container, #wrapper {
-    margin: 0 auto;
-  }
-  #container, #wrapper, .left-col, .right-col, .full-width, .third-col, .readable-width{
-    @include width(6);
-  }
-  .sixth-col{
-    @include width(6);
-  }
-  #intro{
-    text-align: left;
-  }
-  #cta {
-    position: relative;
-    left: -24px;
-    padding: 12px 24px;
-  }
-  #menu ul{
-    position: relative;
-    left: -40px;
-    width: 445px;
-    background-color: $highlight-color;
-    padding: 8px;
-    margin-top: 15px;
-  }
-  #menu ul li a{
-    font-size: 1.5em;
-    text-shadow: none;
+    font-size: em(28);
   }
   #homepage #sponsors {
     h2 {
-      text-align: center;
       padding-top: 20px;
+      text-align: center;
     }
     .image-row {
       text-align: center;
@@ -134,152 +132,157 @@
     }
   }
 }
-/*
-  Tablet layout
-  600-911 px
-  Zoomed in above 600 px
-*/
-@media screen and (min-width: 37.5em) and (max-width: 57em) {
 
-  //Typography
-  p,ul,td,th{
-    font-size: ($font-size - 2) / $em;
-  }
-  ul ul{
-    font-size: 1em;
-  }
-  h1{
-    font-size: ($font-size + 30) / $em;
-  }
-  h2{
-    font-size: ($font-size + 3) / $em;
-  }
-  //Grid
-  #container, #wrapper{
-    @include width(8);
-    margin: 0 auto;
-  }
-  .left-col{
-    @include width(4);
-    float: left;
-    margin-right: $gutter;
-  }
-  .right-col{
-    @include width(4);
-    float: right;
-  }
-  .full-width, .readable-width{
-    @include width(8);
+/*
+  min-width 550px and max-width 1300px
+*/
+
+@media screen and (min-width: 34.375em) and (max-width: 88.564em) {
+
+  .site_nav {
+    float: none;
     clear: both;
+    ul {
+      margin: em(15) 0;
+    }
   }
-  .third-col{
-    @include width(4);
-    float: left;
+
+  .picture {
+    @include left;
+    margin-right: 10px;
+    width: 10%;
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
-  .third-col.first {
-    margin-right: $gutter;
+
+  div.page {
+    margin-top: em(170);
   }
-  .third-col.last{
-    @include width(8);
-    clear: both;
+
+  .foot div {
+    @include left;
+    width: 30%;
+    &:first-child {
+      width: 40%;
+    }
+    &.last {
+      @include right;
+      text-align: right;
+    }
+    #social_row {
+      @include right;
+    }
   }
-  .sixth-col{
-    @include width(2);
-    float: left;
+  .width {
+    margin-bottom: em(30);
+    h2 {
+      margin-top: 0;
+      padding-top: 0;
+    }
   }
+  .intro .width h2 {
+    padding-top: em(60);
+  }
+  .accolades .quote {
+    @include left;
+    width: 20%;
+  }
+
   #cta {
+    padding: 12px 24px;
     position: relative;
     left: -24px;
-    padding: 12px 24px;
   }
   #menu ul{
+    background-color: $highlight-color;
+    margin-top: 15px;
+    padding: 8px;
     position: relative;
     left: -40px;
     width: 585px;
-    background-color: $highlight-color;
-    padding: 8px;
-    margin-top: 15px;
   }
   #menu ul li a{
     font-size: ($font-size + 3) / $em;
   }
   #homepage #sponsors {
     h2 {
-      text-align: center;
       padding-top: 20px;
+      text-align: center;
     }
     .image-row {
       margin-left: $cols4;
     }
   }
 }
+
+//Typography
+p,ul,td,th {
+  font-size: em(16);
+}
+
+ul ul {
+  font-size: 1em;
+}
+h1 {
+  font-size: em(46);
+}
+h2{
+  border-bottom: 1px dashed $title-color;
+  color: $orange;
+  display: block;
+  margin-top: em(30);
+  margin-bottom: em(30);
+  padding-top: em(20);
+  text-align: center;
+}
+.tan, .orange {
+  margin-top: em(30);
+  margin-bottom: em(30);
+  padding: em(30) 0;
+  .width {
+    margin-bottom: 0;
+  }
+}
 /*
-  Widescreen layout
-  912-1887 px
-  Zoomed in above 912 px
+  max-width 1150px
 */
-@media screen and (min-width: 57em) {
+@media only screen and (min-width: 88.564em) {
+
   //Typography
   p {
-    font-size: ($font-size) / $em;
+    font-size: em(16);
   }
   h1{
-    font-size: ($font-size + 50) / $em;
+    font-size: em(66);
   }
   h2{
-    font-size: ($font-size + 10) / $em;
+    font-size: em(26);
   }
-  //Grid
-  #container, #wrapper{
-    @include width(12);
-    margin: 0 auto;
-  }
-  .left-col{
-    @include width(6);
-    float: left;
-    margin-right: $gutter;
-  }
-  .right-col{
-    @include width(6);
-    float: right;
-  }
-  .full-width{
-    @include width(12);
-    clear: both;
-  }
-  .readable-width{
-    margin-left: (1 * ($column + $gutter)) / $em;
-    @include width(10);
-
-    li {
-      margin-left: 5px;
-      padding-bottom: 4px;
-    }
-  }
-  .third-col{
-    @include width(4);
-    margin-right: $gutter;
-    float: left;
-  }
-  .third-col.last{
-    margin-right: 0px;
-  }
-  .sixth-col{
-    @include width(2);
-    margin-right: $gutter;
-    float: left;
-  }
-  .sixth-col.last{
-    margin-right: 0px;
+  h3 {
+    margin-top: 1.25em;
   }
 
-  h2{
-    color: $title-color;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    display: block;
-    text-align: center;
+  .intro .width h2{
     border-bottom: 1px dashed $title-color;
+    color: $orange;
+    display: block;
+    font-family: "Weston-Free";
+    font-size: em(40);
+    margin-top: em(20);
+    margin-bottom: em(20);
+    padding-top: em(30);
+    text-align: center;
+  }
+
+  header > div {
+    float: left;
+    margin-right: 40%;
+  }
+  .site_nav {
+    float: left;
+    padding: em(50) 0 0 0;
   }
 
   header img{
@@ -288,12 +291,12 @@
     padding-left: 15px;*/
   }
   #menu ul{
+    background-color: $highlight-color;
+    margin-top: 40px;
+    padding: 8px;
     position: relative;
     left: -40px;
     width: 875px;
-    background-color: $highlight-color;
-    padding: 8px;
-    margin-top: 40px;
   }
   #menu ul li.first{
     margin-left: 24px;
@@ -305,13 +308,13 @@
     padding: 0 100px;
   }
   #cta {
-    margin: 1em auto 3em;
-    padding: 24px 36px;
     border: 2px solid $bg-color;
-    width: 700px;
     -moz-box-shadow:4px 4px 7px rgba(33,33,33,1);
     -webkit-box-shadow: 4px 4px 7px rgba(33,33,33,.7);
     box-shadow: 4px 4px 7px rgba(33,33,33,.7);
+    margin: 1em auto 3em;
+    padding: 24px 36px;
+    width: 700px;
     .left-col, .right-col {
       width: 21em;
     }
@@ -319,9 +322,9 @@
       margin-bottom: 0.5em;
     }
     h3 {
-      margin-bottom: 0.75em;
-      font-weight: bold;
       font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 0.75em;
     }
     p {
       margin-bottom: 0.5em;
@@ -330,14 +333,67 @@
       margin-top: 1.5em;
     }
   }
+
+  .quote {
+      font-size: em(14);
+      width: 100%;
+    }
+
+  article {
+    @include clearfix;
+    @include left;
+    @include no-space;
+    margin-bottom: em(32);
+    width: 33.25%;
+    &.last {
+      @include right;
+      margin-right: 0;
+    }
+  }
+
+  .width {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: em(30);
+    h2 {
+      margin-top: 0;
+      padding-top: 0;
+    }
+  }
+
+  .white-background {
+    width: 30%;
+    text-align: center;
+  }
+
   footer {
+    @include clearfix;
+    border-top: 5px solid $highlight-color;
     position: relative;
     left: -24px;
-    width: 875px;
-    padding: 8px;
     margin-top: 40px;
-    border-top: 5px solid $highlight-color;
+    padding: 8px;
+    width: 875px;
+
+    section {
+      @include clearfix;
+      margin: 0 auto;
+      width: 95%;
+    }
+
+    div {
+      @include left;
+      width: 33%;
+      &.last {
+        @include right;
+        text-align: right;
+      }
+      #social_row {
+        @include right;
+      }
+    }
   }
+
 
   #homepage #sponsors {
     .image-row {

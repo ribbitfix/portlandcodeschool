@@ -15,3 +15,6 @@ build
 
 # Ignore Sass' cache
 .sass-cache
+
+# Ignore sublime livereload plugin config
+source/stylesheets/modules/config.rb
