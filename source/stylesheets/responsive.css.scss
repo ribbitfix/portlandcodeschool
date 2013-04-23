@@ -47,10 +47,16 @@
   h1 div {
     font-size: em(12);
   }
-
+  footer.foot {
+    div {
+      margin-bottom: 20px;
+    }
+    .centered {
+      text-align: left;
+    }
+  }
   .width {
     h2 {
-      font-size: em(18); //18px
       padding-top: em(30);
       margin-top: 0;
     }
@@ -126,7 +132,7 @@
   min-width 550px and max-width 1300px
 */
 
-@media screen and (min-width: 34.375em) and (max-width: 88.563em) {
+@media screen and (min-width: 34.375em) and (max-width: 88.564em) {
 
   .site_nav {
     float: none;
@@ -164,17 +170,19 @@
       @include right;
     }
   }
-
-
-  .accolades .quote {
-      @include left;
-      width: 20%;
+  .width {
+    margin-bottom: em(30);
+    h2 {
+      margin-top: 0;
+      padding-top: 0;
     }
-
-  .white-background {
-    text-align: center;
-    width: 50%;
-
+  }
+  .intro .width h2 {
+    padding-top: em(60);
+  }
+  .accolades .quote {
+    @include left;
+    width: 20%;
   }
 
   #cta {
@@ -215,10 +223,6 @@ ul ul {
 h1 {
   font-size: em(46);
 }
-h2 {
-  font-size: em(19);
-}
-
 h2{
   border-bottom: 1px dashed $title-color;
   color: $orange;
