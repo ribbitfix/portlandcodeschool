@@ -123,6 +123,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  haml
   middleman (~> 3.0.0)
   middleman-bourbon
   middleman-livereload
