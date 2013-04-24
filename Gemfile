@@ -7,7 +7,7 @@ group :development do
 end
 
 group :assets do
-  gem "middleman-bourbon"
+  gem "bourbon"
   gem "haml"
   gem "sass"
 end

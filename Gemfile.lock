@@ -43,8 +43,6 @@ GEM
       middleman-core (= 3.0.0)
       middleman-more (= 3.0.0)
       middleman-sprockets (= 3.0.0)
-    middleman-bourbon (0.0.2)
-      bourbon (>= 2.1.0)
     middleman-core (3.0.0)
       activesupport (~> 3.2.6)
       bundler (~> 1.1)
@@ -123,8 +121,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bourbon
   haml
   middleman (~> 3.0.0)
-  middleman-bourbon
   middleman-livereload
   sass
