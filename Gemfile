@@ -7,8 +7,5 @@ group :development do
 end
 
 gem "middleman-bourbon"
-
-group :assets do
-  gem "haml"
-  gem "sass"
-end
+gem "haml"
+gem "sass"
