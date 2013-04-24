@@ -1,82 +1,28 @@
-//
 @import "bourbon";
 @import "modules/mixins.css.scss";
-#homepage {
-  #sponsors {
-    .third-col a {
-      margin: 0 auto;
-      text-align: center;
-    }
-  }
-  #cta {
-    position: relative;
-    padding-bottom: 50px;
-    h2 {
-      margin-top: 0;
-    }
-    .button {
-      position: absolute;
-      bottom: 20px;
-      width: 200px;
-      margin-left: 50px;
-    }
-  }
-}
-#community .partner {
-  img {
-    float: left;
-    width: 100px;
-    margin-right: 20px;
-    margin-top: 3px;
-  }
-  h3,p {
-    margin-left: 120px;
-  }
-  #code-scouts {
-    margin-top: 12px;
+
+#page-program {
+  table th {
+    background-color: transparent;
+    border-color: transparent;
   }
 }
 
-#faq .question {
-  margin-bottom: 30px;
-  p:nth-child(1) {
-    margin-bottom: .5em;
-  }
-}
+#page-students {
+  .student {
+    margin-bottom: 30px;
 
-#hire .engagement {
-  img {
-    display: block;
-    float: left;
-    margin-right: 20px;
-    margin-top: 2.5em;
-    height: 100px;
-  }
-  p {
-    margin-left: 120px;
-  }
-}
-#bootcamps {
-  .women {
-    color: $title-color;
-    font-size: 1.5em;
-  }
-  .readable-width img {
-    float: right;
-    width: 150px;
-    padding-left: 20px;
-    padding-bottom: 20px;
-  }
-  a[href="#top"] {
-    float: right;
-    padding-top: 12px;
-  }
-}
-#apply {
-  table {
-    margin-top: 20px;
-  }
-  h3 {
-    margin-bottom: 16px;
+    img {
+      width: 250px;
+      float: left;
+      margin-right: 30px;
+      margin-bottom: 30px;
+    }
+    a {
+      display: block;
+    }
+    h3, a, p {
+      margin-left: 280px;
+    }
   }
 }

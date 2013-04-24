@@ -4,7 +4,6 @@
 @import "modules/grid.css.scss";
 @import "modules/normalize.css";
 
-
 @font-face {font-family:"Weston-Free";src:url("/fonts/Weston_Free.eot?") format("eot"),url("/fonts/Weston_Free.woff") format("woff"),url("/fonts/Weston_Free.ttf") format("truetype"),url("/fonts/Weston_Free.svg#Weston-Free") format("svg");font-weight:normal;font-style:normal;}
 @font-face {font-family:"Weston-Light-Free";src:url("/fonts/Weston_Light_Free.eot?") format("eot"),url("/fonts/Weston_Light_Free.woff") format("woff"),url("/fonts/Weston_Light_Free.ttf") format("truetype"),url("/fonts/Weston_Light_Free.svg#Weston-Light-Free") format("svg");font-weight:normal;font-style:normal;}
 
@@ -397,3 +396,4 @@ footer, .foot {
 }
 
 @import "responsive.css.scss";
+@import "pages.css.scss";
