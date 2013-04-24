@@ -6,8 +6,9 @@ group :development do
   gem "middleman-livereload"
 end
 
+gem "middleman-bourbon"
+
 group :assets do
-  gem "middleman-bourbon"
   gem "haml"
   gem "sass"
 end
