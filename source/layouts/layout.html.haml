@@ -16,7 +16,7 @@
   %body{:lang => "en", :id => "page-#{@body_id}"}
     %a#top
     %header
-      %div
+      %div.logo
         %a{:href => "/"}
           %img{:src => "/images/orange_rose_transparent.png", :alt => "Portland Code School"}
           %h1
@@ -38,14 +38,14 @@
 
     = yield
 
-    %footer.foot.tan
+    %footer.foot
       %section.width
         #mc_embed_signup
           %h3 Mailing List
           %form{:action => "http://chuckvose.us1.list-manage.com/subscribe/post?u=bf62c907d00a592feb0eb305f&amp;id=50dbf0b987", :method => "post", :id => "mc-embedded-subscribe-form", :name => "mc-embedded-subscribe-form", :class => "validate", :target => "_blank" }
             .mc-field-group
               %input{:type => "email", :value => "", :name => "EMAIL", :placeholder => "Email Address", :class => "required email", :id => "mce-EMAIL"}
-              %input{:type => "submit", :name => "subscribe", :id => "mc-embedded-subscribe", :class => "button"}
+              %input{:type => "submit", :name => "subscribe", :id => "mc-embedded-subscribe", :class => "button", :value => "Subscribe"}
         %div.centered
           %h3 Links
           %ul

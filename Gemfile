@@ -1,9 +1,9 @@
 source "https://rubygems.org"
 
-gem "middleman", "~>3.0.0"
+gem "middleman", "~>3.0.13"
 
 group :development do
-  gem "middleman-livereload"
+  gem "middleman-livereload", :github => "middleman/middleman-livereload"
 end
 
 group :assets do

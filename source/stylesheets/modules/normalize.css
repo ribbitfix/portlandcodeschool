@@ -6,6 +6,7 @@
 article, aside, details, figcaption, figure,
 footer, header, hgroup, nav, section, audio, canvas, video {
     display: block;
+    margin: 0 auto;
 }
 
 html {
@@ -77,12 +78,12 @@ input, textarea, button, select {
 */
 
 ::selection {
-    background: #E25B29;
-    color: white;
+    /*background: #E25B29;
+    color: white;*/
 }
 ::-moz-selection {
-    background: red;
-    color: white;
+   /* background: red;
+    color: white;*/
 }
 
 img::selection {
