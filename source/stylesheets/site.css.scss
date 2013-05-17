@@ -25,6 +25,11 @@ body {
 }
 h1, h2, h3, h4, h5 {
   font-family: 'Weston-Free';
+  font-weight: normal;
+}
+h1 .logo-text-bottom {
+  font-family: 'Weston-Light-Free';
+  font-weight: normal;
 }
 h2 {
   color: $orange;
@@ -127,11 +132,11 @@ header {
         }
         &.button {
           @include no-space;
-          background: none; 
+          background: none;
           font-weight: bold;
           &:hover {
             color: $blue;
-          }  
+          }
         }
       }
     }
@@ -262,7 +267,7 @@ header {
     margin-right: 5%;
     max-width: 120px;
     overflow:hidden;
-    img{ 
+    img{
         width: 100%;
         max-width: 110px;
         height: auto;
@@ -462,5 +467,5 @@ footer, .foot {
   }
 }
 
- @import "responsive.css.scss"; 
+ @import "responsive.css.scss";
 @import "pages.css.scss";
