@@ -11,29 +11,32 @@
     .statements
       %h2 What people are saying about PCS
       %article
-        .img_wrap
-          %img{:src => "/images/students/pete.jpg"}
-        .quote
-          %p For me, the Portland Code School has been an awesome experience. The program of study covered a broad range of skills that I continue to use daily.  Our instructor, Chuck, not only draws from both a broad and deep knowledge-base, but communicates it well.
-          .meta
-            %strong Pete Kinnecom
-            %p.company Developer at Appfolio
+        %div{:itemprop => "review", :itemscope => "", :itemtype => "http://schema.org/Review"}
+          .img_wrap
+            %img{:itemprop => "image", :src => "/images/students/pete.jpg"}
+          .quote
+            %p{:itemprop => "reviewBody"} For me, the Portland Code School has been an awesome experience. The program of study covered a broad range of skills that I continue to use daily.  Our instructor, Chuck, not only draws from both a broad and deep knowledge-base, but communicates it well.
+            .meta
+              %strong{:itemprop => "author"} Pete Kinnecom
+              %p.company Developer at Appfolio
       %article
-        .img_wrap
-          %img{:src => "/images/students/rachel.jpg"}
-        .quote
-          %p Portland Code School has equipped me with the tools to continue growing as a developer. The highlights for me was the camaraderie among the students and those moments when I realized how far I'd come.
-          .meta
-            %strong Rachel Sakry
-            %p.company Developer at Elemental Technologies
+        %div{:itemprop => "review", :itemscope => "", :itemtype => "http://schema.org/Review"}
+          .img_wrap
+            %img{:itemprop => "image", :src => "/images/students/rachel.jpg"}
+          .quote
+            %p{:itemprop => "reviewBody"} Portland Code School has equipped me with the tools to continue growing as a developer. The highlights for me was the camaraderie among the students and those moments when I realized how far I'd come.
+            .meta
+              %strong{:itemprop => "author"} Rachel Sakry
+              %p.company Developer at Elemental Technologies
       %article.last
-        .img_wrap
-          %img{:src => "/images/bill.jpg"}
-        .quote
-          %p Chuck is a great resource for anyone learning Ruby and Rails.  He is an enthusiastic teacher and has a broad knowledge of the subject.  I enthusiastically recommend Chuck and the Portland Code School.
-          .meta
-            %strong Bill Den Beste
-            %p.company Owner of Reprise Inc. and ChickTech mentor
+        %div{:itemprop => "review", :itemscope => "", :itemtype => "http://schema.org/Review"}
+          .img_wrap
+            %img{:itemprop => "image", :src => "/images/bill.jpg"}
+          .quote
+            %p{:itemprop => "reviewBody"} Chuck is a great resource for anyone learning Ruby and Rails.  He is an enthusiastic teacher and has a broad knowledge of the subject.  I enthusiastically recommend Chuck and the Portland Code School.
+            .meta
+              %strong{:itemprop => "author"} Bill Den Beste
+              %p.company Owner of Reprise Inc. and ChickTech mentor
 
   %section.badge.width
     %div{:itemscope => "", :itemtype => "http://schema.org/Organization"}
