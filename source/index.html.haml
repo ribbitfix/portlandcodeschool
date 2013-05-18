@@ -36,7 +36,9 @@
             %p.company Owner of Reprise Inc. and ChickTech mentor
 
   %section.badge.width
-    %img{:src => "/images/pcs-badge.png"}
+    %div{:itemscope => "", :itemtype => "http://schema.org/Organization"}
+      %a{:href => "http://www.portlandcodeschool.com/", :itemprop => "url"}
+        %img{:itemprop => "logo", :src => "http://www.portlandcodeschool.com/images/pcs-badge.png"}
 
   %section.stakeholders.width
     %article
